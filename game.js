@@ -1,7 +1,7 @@
 // Game variables
 const wordChains = {
-    "2024-12-08": ["BLUE", "JAY", "WALKING", "STICK", "FIGURE"],
-    "2024-12-09": ["CAT", "TIGER", "LION", "BEAR", "ELEPHANT"], // Example of how to change chains daily
+    "2024-12-11": ["SUN", "FLOWER", "POT", "LUCK", "CHARM"],
+    "2024-12-12": ["BABY", "FACE", "TIME", "OUT", "HOUSE"], // Example of how to change chains daily
     // You can add more word chains here based on dates
 };
 
@@ -55,7 +55,7 @@ function checkGameStatus() {
 function startGame() {
 
 
-        // if (!checkGameStatus()) return; // Exit if the game has already been played
+ if (!checkGameStatus()) return; // Exit if the game has already been played
 
 
     gameOver = false;
