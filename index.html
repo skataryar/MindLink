@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Chain Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>MIND LINK</h1>
+            <p class="daily-challenge">Today's Challenge: <span id="challenge-date"></span></p>
+            <div class="game-info">
+                <span>Time Left: <span id="timer">120</span>s</span>
+                <span>Score: <span id="score">0</span> points</span>
+            </div>
+        </header>
+
+        <div class="word-chain">
+            <!-- Dynamic word chain display -->
+        </div>
+
+        <div class="next-word">
+            <span>Next word:</span>
+            <div id="next-word" class="next-word-display"></div>
+        </div>
+
+        <div class="input-section">
+            <input type="text" id="player-input" placeholder="Enter the next word..." autofocus>
+            <button id="submit-btn">Submit</button>
+        </div>
+
+        <div class="feedback">
+            <p id="feedback-message"></p>
+        </div>
+
+        <!--<div class="game-over">
+            <p>Game Over! Come back tomorrow for a new challenge!</p>
+            
+        </div>
+    -->     
+        
+    </div>
+    <!-- Winning Popup -->
+    <div id="winPopup" class="popup">
+        <div class="popup-content">
+          <h2>Congratulations!</h2>
+          <p>You completed the word chain in time!</p>
+          <p>Come Back tomorrow for a new challenge</p>
+          <!--<button onclick="closePopup('winPopup')">Close</button>-->
+        </div>
+      </div>
+      
+      <!-- Losing Popup -->
+      <div id="losePopup" class="popup">
+        <div class="popup-content">
+          <h2>Try Again Tomorrow</h2>
+          <p>You didn't complete the word chain in time.</p>
+          <!--<button onclick="closePopup('losePopup')">Close</button>-->
+        </div>
+      </div>
+
+    <script src="game.js"></script>
+</body>

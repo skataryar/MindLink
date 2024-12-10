@@ -1,0 +1,217 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Game container */
+.game-container {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Header styling */
+h1 {
+    font-size: 2.5em;
+    color: #ffd700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.daily-challenge {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-style: italic;
+}
+
+.game-info {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    padding-left:4px;
+}
+
+/* Word chain display */
+.word-chain {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.word {
+    background-color: #4caf50;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.word:hover {
+    transform: scale(1.1);
+}
+
+/* Next word display */
+.next-word {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #ffa500;
+}
+
+.next-word-display {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+/* Input section */
+.input-section {
+    margin-bottom: 30px;
+}
+
+#player-input {
+    padding: 10px;
+    width: 70%;
+    max-width: 300px;
+    font-size: 1.2em;
+    border: 2px solid #ffd700;
+    border-radius: 5px;
+}
+
+#submit-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background: linear-gradient(135deg, #4caf50, #388e3c);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#submit-btn:hover {
+    background: #2e7d32;
+}
+
+/* Feedback */
+.feedback {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.correct {
+    color: #4caf50;
+    animation: fade-in 1s ease-in-out;
+}
+
+.incorrect {
+    color: #e53935;
+    animation: fade-in 1s ease-in-out;
+}
+
+/* Game over section */
+.game-over {
+    display: none;
+    font-size: 1.5em;
+    color: #ffffff;
+    background-color: rgba(255, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    animation: fade-in 1s ease-in-out;
+}
+
+#restart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background: linear-gradient(135deg, #ffd700, #ffa000);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+/* Popup Styles */
+
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(163, 43, 43);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    z-index: 1100;
+  }
+
+
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background: #45a049;
+  }
+  
+
+
+
+#restart-btn:hover {
+    background: #ff8f00;
+}
+
+.blurred {
+    filter: blur(5px); /* Adjust blur intensity */
+    pointer-events: none; /* Prevent interaction with the blurred area */
+  }
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
